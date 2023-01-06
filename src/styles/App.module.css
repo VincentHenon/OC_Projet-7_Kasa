@@ -1,0 +1,12 @@
+
+.font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font_500 {
+    font-weight:500;
+}
+
+.no-decoration {
+    list-style: none;
+}

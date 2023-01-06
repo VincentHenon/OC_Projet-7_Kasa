@@ -1,0 +1,22 @@
+.gallery_style {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+    min-height: 300px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-radius: 25px;
+    background: #F7F7F7;
+}
+
+.thumb_style {
+    border-radius: 10px;
+    position: relative;
+    width: calc(33.33% - 60px);
+    height: 340px;
+    margin: 25px;
+}

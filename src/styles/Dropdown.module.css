@@ -1,0 +1,93 @@
+.dropdown_style {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: #FF6060;
+    color: #FFFFFF; 
+    padding: 10px 24px;
+}
+
+.dropdown_style:hover {
+    cursor: pointer;
+}
+
+.close_style {
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.open_style {
+    border-radius: 10px 10px 0px 0px;
+    /* margin-bottom: 16px; */
+}
+
+.title_style {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 142.6%;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 10px, 24px;
+}
+
+.arrow_up_style {
+    width: 16px;
+    transform: rotate(180deg);
+    transition: transform .3s;
+}
+
+.arrow_down_style {
+    width: 16px;
+    transform: rotate(0);
+    transition: transform .3s;
+}
+
+.content_style {
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 142.6%;
+    background: #F7F7F7; 
+    color: #FF6060;
+    margin-bottom: 20px;
+    border-radius: 0 0 10px 10px;
+    padding: 24px;
+    z-index: -1;
+    
+    
+}
+
+.open {
+    animation-name: slideIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    padding: 24px;  
+}
+
+.close {
+    animation-name: slideIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    padding: 0;
+}
+
+@keyframes slideIn {
+    from {
+        opacity:0;
+        transform: scaleY(0);
+    }
+    to {
+        opacity:1;
+        transform: scaleY(1);
+    }
+}
