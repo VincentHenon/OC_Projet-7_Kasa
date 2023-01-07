@@ -1,0 +1,35 @@
+.cntnr_slider_style {
+    position: relative;
+    width: 100%;
+    height: 415px;
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player_style {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 25px;
+    width: 100%;
+    height: 415px;
+    z-index: -1;
+}
+
+.leftArrow_style {
+    transform:  rotate(180deg);
+    padding: calc((415px - 80px) / 2) 20px; /* la hauteur du carrousel -la hauteur du chevron /2 qui me donnne toute la hauteur pour cliquer.*/
+}
+
+.leftArrow_style:hover {
+    cursor: pointer;
+}
+
+.rightArrow_style {
+    padding: calc((415px - 80px) / 2) 20px;
+}
+
+.rightArrow_style:hover {
+    cursor: pointer;
+}

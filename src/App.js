@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from "./components/Header/Header"
 import Home from './pages/Home';
 import About from './pages/About';
+import Page404 from './pages/404';
 import Logement from './pages/Logement';
 import Footer from './components/Footer/Footer';
 import "./styles/styles.css";
@@ -16,6 +17,7 @@ function App() {
                     <Route exact path="/" component={Home}></Route>
                     <Route path="/Logement/:id" component={Logement}></Route>
                     <Route path="/About" component={About}></Route>
+                    <Route component={Page404}></Route>
                 </Switch>
                 <Footer />
             </Router>

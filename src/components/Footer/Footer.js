@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/Footer/Logo.webp"
-import classes from "../../styles/Footer.module.css"
+import Logo from "../../assets/images/Footer/Logo.webp";
+import classes from "../../styles/Footer.module.css";
 
 const Footer = (props) => {
     const currentYear = new Date().getFullYear();

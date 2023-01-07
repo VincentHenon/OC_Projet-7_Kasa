@@ -1,4 +1,4 @@
-import React, { startTransition } from "react";
+import React from "react";
 import fillStar from "../../../assets/svg/star_fill.svg";
 import noFillStar from "../../../assets/svg/star_nofill.svg";
 import classes from "../../../styles/Ratings.module.css";
@@ -6,14 +6,12 @@ import classes from "../../../styles/Ratings.module.css";
 
 const Ratings = ({ rating }) => {
     const stars = [];
-    console.log(rating);
     for (let i = 1; i < 6; i++) {
 
         if (i <= rating) {
-            stars.push(<img src={fillStar} alt="fill star" />);
-            console.log(stars);
+            stars.push(<img key={i} src={fillStar} alt="fill star" />);
         } else {
-            stars.push(<img src={noFillStar} alt=" no fill star" />)
+            stars.push(<img key={i} src={noFillStar} alt=" no fill star" />)
         }
     }
 

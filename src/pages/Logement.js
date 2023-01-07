@@ -12,14 +12,9 @@ import classes from "../styles/Logements.module.css";
 function Logement() {
     const { id } = useParams();
     const loc = logements.find(loc => loc.id === id);
-
     return (
         <div>
-            <Carroussel pics={loc.pictures.map(pic => {
-                return (
-                    <img src={pic} alt="alt" />
-                )
-            })} />
+            <Carroussel pics={loc.pictures} />
             <div className={classes.cntnr_title_style}>
                 <Title title={loc.title} location={loc.location} />
 
@@ -44,9 +39,9 @@ function Logement() {
                 />
                 <Dropdown
                     title="Équipements"
-                    content={loc.equipments.map(line => {
+                    content={loc.equipments.map((line, index) => {
                         return (
-                            <li className="">{line}</li>
+                            <li key={index} className="">{line}</li>
                         )
                     })}
                 />
