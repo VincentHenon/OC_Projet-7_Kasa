@@ -5,18 +5,21 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Logement from './pages/Logement';
 import Footer from './components/Footer/Footer';
+import "./styles/styles.css";
 
 function App() {
     return (
-        <Router>
-            <Header />
-            <Switch>
-                <Route exact path="/" component={Home}></Route>
-                <Route path="/Logement/:id" component={Logement}></Route>
-                <Route path="/About" component={About}></Route>
-            </Switch>
-            <Footer />
-        </Router>
+        <div className="body">
+            <Router>
+                <Header />
+                <Switch>
+                    <Route exact path="/" component={Home}></Route>
+                    <Route path="/Logement/:id" component={Logement}></Route>
+                    <Route path="/About" component={About}></Route>
+                </Switch>
+                <Footer />
+            </Router>
+        </div>
     );
 }
 

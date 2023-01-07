@@ -1,5 +1,5 @@
 import React from "react";
-import imageUrl from "../assets/images/Banner/Banner_2.webp";
+import bannerImage from "../assets/images/Banner/Banner_3.webp";
 import Banner from "../components/Home/Banner/Banner";
 import classes from "../styles/About.module.css";
 import Dropdown from "../components/Logement/Dropdown/Dropdown";
@@ -11,7 +11,7 @@ const sécurité = "La sécurité est la priorité de Kasa. Aussi bien pour nos 
 
 const About = () => (
     <div>
-        <Banner image={imageUrl} title="" className={classes.style} />
+        <Banner imageUrl={bannerImage} title="" className={classes.style} />
         <Dropdown title="Fiabilité" content={fiabilité} />
         <Dropdown title="Respect" content={respect} />
         <Dropdown title="Service" content={service} />

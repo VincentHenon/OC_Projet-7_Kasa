@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 import Thumb from "./Thumb/Thumb"
 import classes from "../../../styles/Gallery.module.css"
 import logements from "../../../assets/Json/logements.json"
-//import classes from "../../Logement/"
 //import axios from "axios"
 
 

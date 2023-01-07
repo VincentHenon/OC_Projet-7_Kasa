@@ -1,0 +1,11 @@
+.logo_style {
+    width: 210px;
+    height: auto;
+    }
+
+@media only screen and (min-width: 320px) and (max-width: 700px){
+    .logo_style {
+        width: 130px;
+        height: auto;
+        }
+    }

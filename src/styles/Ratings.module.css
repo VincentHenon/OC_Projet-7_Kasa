@@ -1,0 +1,6 @@
+.cntnr_stars_style {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}

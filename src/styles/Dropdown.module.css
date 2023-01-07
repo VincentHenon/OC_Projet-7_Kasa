@@ -5,6 +5,8 @@
     background: #FF6060;
     color: #FFFFFF; 
     padding: 10px 24px;
+    margin-top: 16px;
+
 }
 
 .dropdown_style:hover {
@@ -18,7 +20,6 @@
 
 .open_style {
     border-radius: 10px 10px 0px 0px;
-    /* margin-bottom: 16px; */
 }
 
 .title_style {
@@ -53,41 +54,19 @@
     line-height: 142.6%;
     background: #F7F7F7; 
     color: #FF6060;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border-radius: 0 0 10px 10px;
-    padding: 24px;
     z-index: -1;
-    
-    
+    transition: height 1s, visibility 1s, opacity 1s;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
 }
 
 .open {
-    animation-name: slideIn;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    padding: 24px;  
-}
-
-.close {
-    animation-name: slideIn;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    padding: 0;
-}
-
-@keyframes slideIn {
-    from {
-        opacity:0;
-        transform: scaleY(0);
-    }
-    to {
-        opacity:1;
-        transform: scaleY(1);
-    }
+    padding: 24px;
+    opacity: 1;
+    max-height: 1000px;
+    visibility: visible;
 }

@@ -1,0 +1,19 @@
+.ctnr_tags_style {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.cntnr_title_style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cntnr_host_style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

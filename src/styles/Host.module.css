@@ -1,0 +1,18 @@
+.name_style {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    display: flex;
+    justify-content: start;
+    text-align: right;
+    color: #FF6060;
+    margin-right: 5px;
+}
+
+.face_style {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+}

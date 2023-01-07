@@ -14,7 +14,10 @@ const Footer = (props) => {
     return (
         <footer className={classes.cntnr_style}>
             <Link to="/" >
-                <img className={classes.logo_style} src={Logo} alt="logo blanc sur fond noir" onClick={scrollToTop} />
+                <img className={classes.logo_style}
+                    src={Logo}
+                    alt="logo blanc sur fond noir"
+                    onClick={scrollToTop} />
             </Link>
             <div className={classes.credits_style}>© {currentYear} Kasa. All rights reserved</div>
         </footer>

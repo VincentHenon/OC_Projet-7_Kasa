@@ -7,6 +7,7 @@ import Ratings from '../components/Logement/Ratings/Ratings';
 import Tags from '../components/Logement/Tags/Tags';
 import Dropdown from '../components/Logement/Dropdown/Dropdown';
 import logements from '../assets/Json/logements.json';
+import classes from "../styles/Logements.module.css";
 
 function Logement() {
     const { id } = useParams();
@@ -19,25 +20,30 @@ function Logement() {
                     <img src={pic} alt="alt" />
                 )
             })} />
-            <div>
+            <div className={classes.cntnr_title_style}>
                 <Title title={loc.title} location={loc.location} />
-                <Host host={loc.host} />
+
+                <div className={classes.ctnr_ratings_style}>
+                    <div className={classes.cntnr_host_style}>
+                        <Host host={loc.host} />
+                    </div>
+                    <Ratings rating={loc.rating} />
+                </div>
+
             </div>
-            <div>
-                <Ratings rating={loc.rating} />
-                <Tags tags={loc.tags.map(tag => {
-                    return (
-                        <span>{tag}</span>
-                    )
-                })} />
+            <div className={classes.ctnr_tags_style}>
+                {loc.tags.map((tag, index) => (
+                    <Tags key={index} tag={tag} />
+                ))}
+                <div />
             </div>
             <div className="container-flex">
                 <Dropdown
-                    title="description"
+                    title="Description"
                     content={loc.description}
                 />
                 <Dropdown
-                    title="equipements"
+                    title="Équipements"
                     content={loc.equipments.map(line => {
                         return (
                             <li className="">{line}</li>
@@ -45,6 +51,7 @@ function Logement() {
                     })}
                 />
             </div>
+
         </div>
     );
 }
