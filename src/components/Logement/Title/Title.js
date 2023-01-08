@@ -3,8 +3,8 @@ import classes from "../../../styles/Title.module.css";
 
 const Title = (props) => (
     <div>
-        <h2 className={classes.h2_style}>{props.title}</h2>
-        <h3 className={classes.h3_style}>{props.location}</h3>
+        <h1 className={` ${classes.title} fc_primary fs_36 fw_500 txt_norm txt_height `}>{props.title}</h1>
+        <p className={` ${classes.local} fc_primary fs_18 fw_500 txt_norm txt_height `}>{props.location}</p>
     </div>
 );
 

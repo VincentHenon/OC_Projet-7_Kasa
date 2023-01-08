@@ -1,18 +1,13 @@
-.tags_style {
-    background: #FF6060;
+.tags {
     border-radius: 10px;   
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 142.6%;
-    text-align: center;
-    color: #FFFFFF;
+    text-align: center;  
     padding: 5px 40px;
     margin:10px 10px 10px 0;
     box-shadow: 5px 5px 10px rgba(0,0,0, .2);
 }
 
-.text_style {
-
+@media only screen and (max-width: 500px){
+    .tags {
+        font-size: 10px;
+    }
 }

@@ -9,14 +9,14 @@ const Ratings = ({ rating }) => {
     for (let i = 1; i < 6; i++) {
 
         if (i <= rating) {
-            stars.push(<img key={i} src={fillStar} alt="fill star" />);
+            stars.push(<img key={i} className={classes.star} src={fillStar} alt="fill star" />);
         } else {
-            stars.push(<img key={i} src={noFillStar} alt=" no fill star" />)
+            stars.push(<img key={i} className={classes.star} src={noFillStar} alt=" no fill star" />)
         }
     }
 
     return (
-        <div className={classes.cntnr_stars_style}>
+        <div className={classes.cntnr_stars}>
             {stars}
         </div>
     )

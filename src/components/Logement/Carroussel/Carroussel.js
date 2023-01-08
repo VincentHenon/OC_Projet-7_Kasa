@@ -27,16 +27,16 @@ const Carroussel = (props) => {
     }
 
     return (
-        <div className={classes.cntnr_slider_style}>
+        <div className={classes.cntnr_slider}>
             {maxNbr !== 1 ?
-                <div className={classes.leftArrow_style} onClick={() => handleArrows("left")}>
+                <div className={classes.leftArrow} onClick={() => handleArrows("left")}>
                     <img src={Arrow} alt="left arrow" />
                 </div> : null}
 
-            <img className={classes.player_style} src={imgUrlArray[currImg]} alt="slider" />
+            <img className={classes.slider} src={imgUrlArray[currImg]} alt="slider" />
 
             {maxNbr !== 1 ?
-                <div className={classes.rightArrow_style} onClick={() => handleArrows("right")}>
+                <div className={classes.rightArrow} onClick={() => handleArrows("right")}>
                     <img src={Arrow} alt="right arrow" />
                 </div> : null}
         </div>

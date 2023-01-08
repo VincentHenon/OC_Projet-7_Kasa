@@ -15,18 +15,18 @@ function Logement() {
     return (
         <div>
             <Carroussel pics={loc.pictures} />
-            <div className={classes.cntnr_title_style}>
+            <div className={classes.cntnr_title}>
                 <Title title={loc.title} location={loc.location} />
 
-                <div className={classes.ctnr_ratings_style}>
-                    <div className={classes.cntnr_host_style}>
+                <div className={classes.ctnr_ratings}>
+                    <div className={classes.cntnr_host}>
                         <Host host={loc.host} />
                     </div>
                     <Ratings rating={loc.rating} />
                 </div>
 
             </div>
-            <div className={classes.ctnr_tags_style}>
+            <div className={classes.ctnr_tags}>
                 {loc.tags.map((tag, index) => (
                     <Tags key={index} tag={tag} />
                 ))}

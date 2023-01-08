@@ -1,20 +1,26 @@
-.name_style {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 142.6%;
+.name {
     display: flex;
     justify-content: start;
     text-align: right;
-    color: #FF6060;
     margin-right: 5px;
     width: 50%;
 }
 
-.face_style {
+.face {
     width: 64px;
     height: 64px;
     border-radius: 50%;
     overflow: clip;
+}
+
+@media only screen and (max-width: 500px){
+    .name {
+        font-size: 12px!important;
+        width: 25%;
+        margin-right: 25px;
+    }
+    .face {
+        width: 32px;
+        height: 32px!important;
+    }
 }

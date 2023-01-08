@@ -1,6 +1,11 @@
-.cntnr_stars_style {
+.cntnr_stars {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: nowrap;
+}
+@media only screen and (max-width: 500px){
+    .star {
+        height: 18px;
+    }
 }

@@ -1,17 +1,18 @@
-.ctnr_tags_style {
+.ctnr_tags {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
 
 }
 
-.cntnr_title_style {
+.cntnr_title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.cntnr_host_style {
+.cntnr_host {
     display: flex;
     flex-direction: row;
     justify-content: right;
