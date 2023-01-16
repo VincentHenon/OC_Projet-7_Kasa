@@ -1,0 +1,21 @@
+.title-404 {
+    @include title-404_desktop;
+    text-align: center;
+    margin-top: 170px;
+}
+
+.sub-404 {
+    @include sub-404_desktop;
+    text-align: center;
+    margin-bottom: 180px;
+}
+
+.link-404 {
+    @include link-404_desktop;
+    text-align: center;
+    margin-bottom: 150px;
+
+    &:hover {
+        color: $clr_hover;
+    }
+}

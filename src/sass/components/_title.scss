@@ -1,0 +1,21 @@
+.h1-title {
+    margin: 0;
+    padding: 0;
+    @include title-h1_desktop;
+}
+
+.location {
+    margin: 0;
+    padding: 0;
+    @include location_desktop;
+}
+
+@media only screen and (max-width: 500px) {
+    .title {
+        @include title-h1_mobile;
+    }
+
+    .location {
+        @include location_mobile;
+    }
+}

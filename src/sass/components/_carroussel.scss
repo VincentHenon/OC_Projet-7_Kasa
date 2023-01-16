@@ -1,0 +1,56 @@
+.slider-cntnr {
+    position: relative;
+    width: 100%;
+    height: 415px;
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-img {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 25px;
+    width: 100%;
+    height: 415px;
+    transform-origin: center;
+    /* ????? */
+    z-index: -1;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+    padding: calc((415px - 80px) / 2) 20px;
+    /* la hauteur du carrousel -la hauteur du chevron /2 qui me donnne toute la hauteur pour cliquer.*/
+}
+
+.arrow-left:hover {
+    cursor: pointer;
+}
+
+.arrow-right {
+    padding: calc((415px - 80px) / 2) 20px;
+}
+
+.arrow-right:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    .slider-cntnr {
+        height: 255px;
+    }
+
+    .slider-img {
+        height: 255px;
+    }
+
+    .arrow-left {
+        transform: scale(.5) rotate(180deg);
+    }
+
+    .arrow-right {
+        transform: scale(.5);
+    }
+}

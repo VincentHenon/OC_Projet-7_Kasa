@@ -1,0 +1,35 @@
+.cntnr-name-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .name {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: right;
+        margin-right: 5px;
+        width: 50%;
+        @include host_desktop;
+    }
+
+    .img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        overflow: clip;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .name {
+        width: 25%;
+        margin-right: 25px;
+        @include host_mobile;
+    }
+
+    .face {
+        width: 32px;
+        height: 32px;
+    }
+}

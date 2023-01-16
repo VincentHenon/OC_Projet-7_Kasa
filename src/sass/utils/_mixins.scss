@@ -1,0 +1,207 @@
+////////////////
+//PAGE LOGEMENT
+////////////////
+
+//dropdown's mixins
+@mixin dropdown-logement-content_desktop {
+    font-weight: $f-w_400;
+    font-size: $f-s_18;
+    color: $clr_primary;
+    background: $clr_secondary;
+}
+
+@mixin dropdown-logement-content_mobile {
+    font-weight: $f-w_400;
+    font-size: $f-s_12;
+    color: $clr_primary;
+    background: $clr_secondary;
+}
+
+@mixin dropdown-logement-title_desktop {
+    font-weight: $f-w_500;
+    font-size: $f-s_18;
+    color: $clr_light;
+}
+
+@mixin dropdown-logement-title_mobile {
+    font-weight: $f-w_400;
+    font-size: $f-s_13;
+    color: $clr_light;
+}
+
+//host's mixins
+@mixin host_desktop {
+    font-weight: $f-w_500;
+    font-size: $f-s_18;
+    color: $clr_primary;
+}
+
+@mixin host_mobile {
+    font-weight: $f-w_500;
+    font-size: $f-s_12;
+    color: $clr_primary;
+}
+
+//location's mixins
+@mixin location_desktop {
+    @include host_desktop;
+}
+
+@mixin location_mobile {
+    font-weight: $f-w_500;
+    font-size: $f-s_14;
+    color: $clr_primary;
+}
+
+//tags's mixins
+@mixin tags_desktop {
+    font-weight: $f-w_500;
+    font-size: $f-s_14;
+    color: $clr_light;
+    background: $clr_primary;
+}
+
+@mixin tags_mobile {
+    font-weight: $f-w_500;
+    font-size: $f-s_10;
+    color: $clr_light;
+    background: $clr_primary;
+}
+
+//title's mixins
+@mixin title-h1_desktop {
+    font-weight: $f-w_500;
+    font-size: $f-s_36;
+    color: $clr_primary;
+}
+
+@mixin title-h1_mobile {
+    @include host_desktop;
+}
+
+
+/////////////
+//PAGE ABOUT
+/////////////
+
+//dropdown's mixins
+@mixin dropdown-about-title_desktop {
+    font-weight: $f-w_500;
+    font-size: $f-s_24;
+    color: $clr_light;
+}
+
+@mixin dropdown-about-title_mobile {
+    font-weight: $f-w_500;
+    font-size: $f-s_13;
+    color: $clr_light;
+}
+
+@mixin dropdown-about-content_desktop {
+    font-weight: $f-w_400;
+    font-size: $f-s_24;
+    color: $clr_primary;
+    background: $clr-secondary;
+}
+
+@mixin dropdown-about-content_mobile {
+    @include dropdown-logement-content_mobile;
+}
+
+
+////////////
+//PAGE HOME
+////////////
+
+//Banner's mixins
+@mixin banner-title_desktop {
+    font-weight: $f-w_500;
+    font-size: $f-s_48;
+    color: $clr_light;
+}
+
+@mixin banner-title_mobile {
+    font-weight: $f-w_500;
+    font-size: $f-s_24;
+    color: $clr_light;
+}
+
+//Thumb's mixins 
+@mixin thumb-title_both {
+    @include dropdown-title_desktop;
+}
+
+
+//////////
+//PAGE 404
+//////////
+
+//title's mixins
+@mixin title-404_desktop {
+    font-weight: $f-w_700;
+    font-size: $f-s_288;
+    color: $clr_primary;
+}
+
+@mixin title-404_mobile {
+    font-weight: $f-w_700;
+    font-size: $f-s_96;
+    color: $clr_primary;
+}
+
+//subtitle's mixins
+@mixin sub-404_desktop {
+    font-weight: $f-w_500;
+    font-size: $f-s_36;
+    color: $clr_primary;
+}
+
+@mixin sub-404_mobile {
+    @include host_desktop;
+}
+
+//link's mixins
+@mixin link-404_desktop {
+    @include host_desktop;
+    text-decoration: underline;
+}
+
+@mixin link-404_mobile {
+    @include location_mobile;
+    text-decoration: underline;
+}
+
+
+/////////////////
+//SECTION HEADER 
+/////////////////
+
+//navbar
+@mixin navbar_desktop {
+    @include host_mobile;
+}
+
+@mixin navbar_mobile {
+    font-weight: $f-w_500;
+    font-size: $f-s_24;
+    color: $clr_primary;
+    text-transform: uppercase;
+}
+
+
+/////////////////
+//SECTION FOOTER 
+/////////////////
+
+//footer
+@mixin credits_desktop {
+    font-weight: $f-w_500;
+    font-size: $f-s_24;
+    color: $clr_light;
+}
+
+@mixin credits_mobile {
+    font-weight: $f-w_500;
+    font-size: $f-s_12;
+    color: $clr_light;
+}

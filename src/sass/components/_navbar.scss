@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    list-style: none;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    color: #FF6060;
+}
+
+nav a {
+    padding: 5px 5px 5px 10px;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #a93f3f;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar_style {
+        font-size: 12px !important;
+        text-transform: uppercase;
+    }
+}

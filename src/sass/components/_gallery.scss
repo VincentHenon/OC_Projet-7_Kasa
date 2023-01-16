@@ -1,0 +1,39 @@
+.gallery-cntnr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+    min-height: 300px;
+    min-width: 250px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 25px;
+    background: $clr_secondary ;
+}
+
+.thumb {
+    border-radius: 10px;
+    position: relative;
+    width: 340px;
+    min-width: 230px;
+    height: 340px;
+    margin: 25px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+    transform: rotate(0) scale(1);
+    transition: transform .6s ease, box-shadow .6s ease-in-out;
+
+    &:hover {
+        transform: rotate(1deg) scale(1.07);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transition: transform .6s ease, box-shadow .6s ease-in-out;
+    }
+}
+
+// @media only screen and (max-width: 500px) {
+//     .cntnr {
+//         background-color: transparent;
+//     }
+// }

@@ -1,54 +1,71 @@
 import React from 'react';
-import { useParams } from "react-router-dom"
-import Carroussel from '../components/Logement/Carroussel/Carroussel';
-import Title from '../components/Logement/Title/Title';
-import Host from '../components/Logement/Host/Host';
-import Ratings from '../components/Logement/Ratings/Ratings';
-import Tags from '../components/Logement/Tags/Tags';
-import Dropdown from '../components/Logement/Dropdown/Dropdown';
-import logements from '../assets/Json/logements.json';
-import classes from "../styles/Logements.module.css";
+import { useParams, Link } from "react-router-dom"
+import Carroussel from '../components/Carroussel';
+import Title from '../components/Title';
+import Host from '../components/Host';
+import Ratings from '../components/Ratings';
+import Tags from '../components/Tags';
+import Dropdown from '../components/Dropdown';
+import logements from '../assets/json/logements.json';
 
 function Logement() {
     const { id } = useParams();
-    const loc = logements.find(loc => loc.id === id);
-    return (
-        <div>
-            <Carroussel pics={loc.pictures} />
-            <div className={classes.cntnr_title}>
-                <Title title={loc.title} location={loc.location} />
-
-                <div className={classes.ctnr_ratings}>
-                    <div className={classes.cntnr_host}>
-                        <Host host={loc.host} />
+    const logement = logements.find(logement => logement.id === id);
+    if (!logement) {
+        console.log("la recherche de l'ID n'a pas abouti car logement est = " + logement)
+        return <Link to="/404" />;
+    } else {
+        return (
+            <div>
+                <Carroussel pics={logement.pictures} />
+                <div className="cntnr-title-location-tags-host-ratings">
+                    <div className="cntr-title-location-tags">
+                        <Title
+                            className="title"
+                            title={logement.title}
+                            location={logement.location}
+                        />
+                        <div className="cntnr-tags">
+                            {logement.tags.map(tag => (
+                                <Tags key={tag} tag={tag} />
+                            ))}
+                        </div>
                     </div>
-                    <Ratings rating={loc.rating} />
+                    <div className="cntnr-host-ratings">
+                        <Host
+                            className="host"
+                            host={logement.host}
+                        />
+                        <Ratings
+                            className="ratings"
+                            rating={logement.rating}
+                        />
+                    </div>
+
+                </div>
+                <div className="container-flex">
+                    <Dropdown
+                        title="Description"
+                        content={logement.description}
+                        titleClass={"logement-title"}
+                        contentClass={"logement-content"}
+
+                    />
+                    <Dropdown
+                        title="Équipements"
+                        content={logement.equipments.map(line => {
+                            return (
+                                <li key={line} className="">{line}</li>
+                            )
+                        })}
+                        titleClass={"logement-title"}
+                        contentClass={"logement-content"}
+                    />
                 </div>
 
             </div>
-            <div className={classes.ctnr_tags}>
-                {loc.tags.map((tag, index) => (
-                    <Tags key={index} tag={tag} />
-                ))}
-                <div />
-            </div>
-            <div className="container-flex">
-                <Dropdown
-                    title="Description"
-                    content={loc.description}
-                />
-                <Dropdown
-                    title="Équipements"
-                    content={loc.equipments.map((line, index) => {
-                        return (
-                            <li key={index} className="">{line}</li>
-                        )
-                    })}
-                />
-            </div>
-
-        </div>
-    );
+        );
+    }
 }
 
 export default Logement;

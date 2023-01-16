@@ -1,0 +1,22 @@
+.cntnr-title-location-tags-host-ratings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .cntr-title-location-tags {
+        .cntnr-tags {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+    }
+
+    .cntnr-host-ratings {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}

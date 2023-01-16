@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from "./components/Header/Header"
+import Header from "./layout/Header"
 import Home from './pages/Home';
 import About from './pages/About';
 import Page404 from './pages/404';
 import Logement from './pages/Logement';
-import Footer from './components/Footer/Footer';
-import "./styles/styles.css";
+import Footer from './layout/Footer';
+import "./sass/main.css";
 
 function App() {
     return (
@@ -15,8 +15,8 @@ function App() {
                 <Header />
                 <Switch>
                     <Route exact path="/" component={Home}></Route>
-                    <Route path="/Logement/:id" component={Logement}></Route>
-                    <Route path="/About" component={About}></Route>
+                    <Route path="/logements/:id" component={Logement}></Route>
+                    <Route path="/about" component={About}></Route>
                     <Route component={Page404}></Route>
                 </Switch>
                 <Footer />
