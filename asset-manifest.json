@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/OC_Projet-7_Kasa/static/css/main.b090adfc.css",
+    "main.js": "/OC_Projet-7_Kasa/static/js/main.516e7226.js",
+    "static/media/Banner_3.webp": "/OC_Projet-7_Kasa/static/media/Banner_3.2002b7b27cc46f5e6b48.webp",
+    "static/media/Banner_1.webp": "/OC_Projet-7_Kasa/static/media/Banner_1.8fe9ea98112d820e0c54.webp",
+    "static/media/Logo.webp": "/OC_Projet-7_Kasa/static/media/Logo.12fd3f4ad64993243494.webp",
+    "index.html": "/OC_Projet-7_Kasa/index.html",
+    "static/media/star_fill.svg": "/OC_Projet-7_Kasa/static/media/star_fill.4949d967956f67c591576c1c58b597ba.svg",
+    "static/media/star_nofill.svg": "/OC_Projet-7_Kasa/static/media/star_nofill.ae969662d77c07fdced4114f41bf3e69.svg",
+    "static/media/sliderArrow.svg": "/OC_Projet-7_Kasa/static/media/sliderArrow.8d9545cb18f67cea4ffddb888aa4dcb0.svg",
+    "static/media/arrowUp.svg": "/OC_Projet-7_Kasa/static/media/arrowUp.c5c8b533dbabae548c75eaeceadc14cd.svg",
+    "main.b090adfc.css.map": "/OC_Projet-7_Kasa/static/css/main.b090adfc.css.map",
+    "main.516e7226.js.map": "/OC_Projet-7_Kasa/static/js/main.516e7226.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b090adfc.css",
+    "static/js/main.516e7226.js"
+  ]
+}
