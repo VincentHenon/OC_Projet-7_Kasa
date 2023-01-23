@@ -8,6 +8,18 @@
     font-size: $f-s_18;
     color: $clr_primary;
     background: $clr_secondary;
+
+    li {
+        list-style: none;
+        font-weight: 400;
+    }
+}
+
+@mixin dropdown-logement-content_tablet {
+    font-weight: $f-w_400;
+    font-size: $f-s_14;
+    color: $clr_primary;
+    background: $clr_secondary;
 }
 
 @mixin dropdown-logement-content_mobile {
@@ -19,6 +31,12 @@
 
 @mixin dropdown-logement-title_desktop {
     font-weight: $f-w_500;
+    font-size: $f-s_18;
+    color: $clr_light;
+}
+
+@mixin dropdown-logement-title_tablet {
+    font-weight: $f-w_400;
     font-size: $f-s_18;
     color: $clr_light;
 }
@@ -91,6 +109,12 @@
     color: $clr_light;
 }
 
+@mixin dropdown-about-title_tablet {
+    font-weight: $f-w_500;
+    font-size: $f-s_18;
+    color: $clr_light;
+}
+
 @mixin dropdown-about-title_mobile {
     font-weight: $f-w_500;
     font-size: $f-s_13;
@@ -100,6 +124,18 @@
 @mixin dropdown-about-content_desktop {
     font-weight: $f-w_400;
     font-size: $f-s_24;
+    color: $clr_primary;
+    background: $clr-secondary;
+
+    li {
+        list-style: none;
+        font-weight: 400;
+    }
+}
+
+@mixin dropdown-about-content_tablet {
+    font-weight: $f-w_400;
+    font-size: $f-s_18;
     color: $clr_primary;
     background: $clr-secondary;
 }
@@ -120,6 +156,12 @@
     color: $clr_light;
 }
 
+@mixin banner-title_tablet {
+    font-weight: $f-w_500;
+    font-size: $f-s_36;
+    color: $clr_light;
+}
+
 @mixin banner-title_mobile {
     font-weight: $f-w_500;
     font-size: $f-s_24;
@@ -136,10 +178,16 @@
 //PAGE 404
 //////////
 
-//title's mixins
+//title
 @mixin title-404_desktop {
     font-weight: $f-w_700;
     font-size: $f-s_288;
+    color: $clr_primary;
+}
+
+@mixin title-404_tablet {
+    font-weight: $f-w_700;
+    font-size: $f-s_192;
     color: $clr_primary;
 }
 
@@ -149,10 +197,16 @@
     color: $clr_primary;
 }
 
-//subtitle's mixins
+//subtitle
 @mixin sub-404_desktop {
     font-weight: $f-w_500;
     font-size: $f-s_36;
+    color: $clr_primary;
+}
+
+@mixin sub-404_tablet {
+    font-weight: $f-w_500;
+    font-size: $f-s_24;
     color: $clr_primary;
 }
 
@@ -160,9 +214,16 @@
     @include host_desktop;
 }
 
-//link's mixins
+//link
 @mixin link-404_desktop {
     @include host_desktop;
+    text-decoration: underline;
+}
+
+@mixin link-404_tablet {
+    font-weight: $f-w_500;
+    font-size: $f-s_18;
+    color: $clr_primary;
     text-decoration: underline;
 }
 
@@ -178,12 +239,20 @@
 
 //navbar
 @mixin navbar_desktop {
-    @include host_mobile;
+    font-weight: $f-w_500;
+    font-size: $f-s_24;
+    color: $clr_primary;
+}
+
+@mixin navbar_tablet {
+    font-weight: $f-w_500;
+    font-size: $f-s_18;
+    color: $clr_primary;
 }
 
 @mixin navbar_mobile {
     font-weight: $f-w_500;
-    font-size: $f-s_24;
+    font-size: $f-s_12;
     color: $clr_primary;
     text-transform: uppercase;
 }
@@ -197,6 +266,12 @@
 @mixin credits_desktop {
     font-weight: $f-w_500;
     font-size: $f-s_24;
+    color: $clr_light;
+}
+
+@mixin credits_tablet {
+    font-weight: $f-w_500;
+    font-size: $f-s_18;
     color: $clr_light;
 }
 

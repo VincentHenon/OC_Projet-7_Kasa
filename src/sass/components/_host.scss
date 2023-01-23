@@ -22,14 +22,16 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .name {
-        width: 25%;
-        margin-right: 25px;
-        @include host_mobile;
-    }
+    .cntnr-name-img {
+        .name {
+            width: 25%;
+            margin-right: 10px;
+            @include host_mobile;
+        }
 
-    .face {
-        width: 32px;
-        height: 32px;
+        .img {
+            width: 32px;
+            height: 32px;
+        }
     }
 }

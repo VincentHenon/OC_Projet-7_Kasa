@@ -28,18 +28,16 @@ const About = () => (
         <Banner imageUrl={bannerImage} title="" />
         {table.map((item) => {
             return (
-                <>
-                    <Dropdown
-                        key={item.title}
-                        title={item.title}
-                        content={item.content}
-                        titleClass={"about-title"}
-                        contentClass={"about-content"}
-                    />
-                </>
+                <Dropdown
+                    key={item.title}
+                    title={item.title}
+                    titleClass={"about-title"}
+                    contentClass={"about-content"}
+                >
+                    {item.content}
+                </Dropdown>
             )
         })}
-
     </div>
 );
 

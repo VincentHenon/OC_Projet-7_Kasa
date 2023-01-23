@@ -26,22 +26,34 @@
         @include banner-title_desktop;
         text-align: center;
         z-index: 1;
-        padding: 50px 16px;
+        padding: 0 16px;
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 501px) and (max-width: 700px) {
+    .banner-cntnr {
+        height: 160px;
+
+        .banner-title {
+            @include banner-title_tablet;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
     .banner-cntnr {
         height: 110px;
         border-radius: 10px;
-    }
+        justify-content: flex-start;
 
-    .banner-title {
-        @include banner-title_mobile;
-        text-align: left;
-    }
+        .banner-title {
+            @include banner-title_mobile;
+            text-align: left;
+            width: 65%;
+        }
 
-    .banner-img {
-        border-radius: 10px;
+        .banner-img {
+            border-radius: 10px;
+        }
     }
 }

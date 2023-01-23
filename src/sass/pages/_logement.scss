@@ -1,9 +1,13 @@
 .cntnr-title-location-tags-host-ratings {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
+    column-gap: 50px;
 
     .cntr-title-location-tags {
+        flex-shrink: 2;
+
         .cntnr-tags {
             display: flex;
             flex-direction: row;
@@ -13,10 +17,25 @@
     }
 
     .cntnr-host-ratings {
+
         display: flex;
         flex-direction: column;
         justify-content: right;
         align-items: center;
         margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 700px) {}
+
+@media only screen and (max-width: 700px) {
+    .cntnr-title-location-tags-host-ratings {
+        flex-wrap: wrap;
+
+        .cntnr-host-ratings {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+        }
     }
 }

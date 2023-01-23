@@ -1,10 +1,10 @@
 import React from "react";
 
-const banner = (props) => (
+const banner = ({ imageUrl, title }) => (
     <>
         <section className="banner-cntnr">
-            <img src={props.imageUrl} alt="banner pic" className="banner-img" />
-            <h1 className="banner-title">{props.title}</h1>
+            <img src={imageUrl} alt="banner pic" className="banner-img" />
+            <h1 className="banner-title">{title}</h1>
         </section>
     </>
 );

@@ -23,17 +23,45 @@
     margin: 25px;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
     transform: rotate(0) scale(1);
-    transition: transform .6s ease, box-shadow .6s ease-in-out;
+    transition: transform .4s ease, box-shadow .4s ease-in-out;
 
     &:hover {
-        transform: rotate(1deg) scale(1.07);
+        transform: rotate(.5deg) scale(1.03);
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-        transition: transform .6s ease, box-shadow .6s ease-in-out;
+        transition: transform .4s ease, box-shadow .4s ease-in-out;
+
+        .thumb-gradient {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%);
+        }
     }
 }
 
-// @media only screen and (max-width: 500px) {
-//     .cntnr {
-//         background-color: transparent;
-//     }
-// }
+@media only screen and (min-width: 501px) and (max-width: 906px) {
+    .gallery-cntnr {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        .thumb {
+            width: 100%;
+            margin: 15px 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .gallery-cntnr {
+        background: $clr_light;
+        margin: 15px 0;
+        padding: 0;
+        border-radius: 10px;
+
+        .thumb {
+            width: 100%;
+            margin: 15px 0;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+}

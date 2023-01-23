@@ -5,12 +5,10 @@ function Navbar() {
     return (
         <nav>
             <NavLink
-                activeClassName="active"
-                to="/" exact>
+                to="/">
                 Accueil
             </NavLink>
             <NavLink
-                activeClassName="active"
                 to="/about">
                 À propos
             </NavLink>

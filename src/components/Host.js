@@ -1,9 +1,9 @@
 import React from "react";
 
-const Host = (props) => (
+const Host = ({ host }) => (
     <div className="cntnr-name-img">
-        <div className="name">{props.host.name}</div>
-        <img className="img" src={props.host.picture} alt="host pics" />
+        <div className="name">{host.name}</div>
+        <img className="img" src={host.picture} alt="host pics" />
     </div>
 );
 

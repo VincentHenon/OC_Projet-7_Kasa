@@ -1,6 +1,7 @@
 .h1-title {
     margin: 0;
     padding: 0;
+    overflow-wrap: break-word;
     @include title-h1_desktop;
 }
 
@@ -11,7 +12,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .title {
+    .h1-title {
         @include title-h1_mobile;
     }
 

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Arrow from "../assets/svg/sliderArrow.svg";
 
-const Carroussel = (props) => {
-    const imgUrlArray = props.pics;
-    const maxNbr = props.pics.length - 1;
+const Carroussel = ({ pics }) => {
+    const imgUrlArray = pics;
+    const maxNbr = pics.length - 1;
     let [currImg, setCurrImg] = useState(0);
-
+    const displayNbr = `${currImg + 1} / ${maxNbr + 1}`;
 
     const handleArrows = (direction) => {
         if (direction === 'left') {
@@ -31,7 +31,7 @@ const Carroussel = (props) => {
                 </div> : null}
 
             <img className="slider-img" src={imgUrlArray[currImg]} alt="slider" />
-
+            <div className="display-number">{displayNbr}</div>
             {maxNbr !== 1 ?
                 <div className="arrow-right" onClick={() => handleArrows("right")}>
                     <img src={Arrow} alt="right arrow" />

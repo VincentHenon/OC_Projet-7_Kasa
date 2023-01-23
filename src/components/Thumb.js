@@ -1,10 +1,10 @@
 import React from "react";
 
-const thumb = (thumb) => (
+const thumb = ({ cover, title }) => (
     <>
-        <img src={thumb.cover} alt="logement cover" className="thumb-img" />
+        <img src={cover} alt="logement cover" className="thumb-img" />
         <div className="thumb-gradient"></div>
-        <h2 className="thumb-title">{thumb.title}</h2>
+        <h2 className="thumb-title">{title}</h2>
     </>
 );
 

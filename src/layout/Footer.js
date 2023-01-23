@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/Footer/Logo.webp";
 
-const Footer = (props) => {
+const Footer = () => {
     const currentYear = new Date().getFullYear();
     const scrollToTop = () => {
         window.scrollTo({

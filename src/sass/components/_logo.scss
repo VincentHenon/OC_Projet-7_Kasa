@@ -3,9 +3,16 @@
     height: auto;
 }
 
+@media only screen and (min-width: 501px) and (max-width: 700px) {
+    .logo {
+        width: 165px;
+        height: auto;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .logo {
-        width: 145px;
+        width: 120px;
         height: auto;
     }
 }

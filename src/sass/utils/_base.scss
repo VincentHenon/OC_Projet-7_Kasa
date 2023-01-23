@@ -1,6 +1,13 @@
 body {
-    padding: 4% 7%;
+    padding: 4% 7% 0 7%;
     margin: 0;
+}
+
+.body {
+    //to stick the footer to the bottom of the screen.
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 * {
@@ -13,4 +20,9 @@ body {
 
 *:visited {
     color: inherit;
+}
+
+li {
+    list-style: none;
+    font-weight: 400;
 }
