@@ -7,6 +7,7 @@ function Gallery() {
     const [loading, setLoading] = useState([])
 
     useEffect(() => {
+
         async function fetchData() {
             try {
                 setLoading(true)
@@ -36,7 +37,7 @@ function Gallery() {
                     logements ?
                         logements.map(loc => (
                             <div className="thumb" key={loc.id} >
-                                <Link to={`../../logements/${loc.id}`}>
+                                <Link to={`/logements/${loc.id}`}>
                                     <Thumb
                                         cover={loc.cover}
                                         title={loc.title}
@@ -44,7 +45,9 @@ function Gallery() {
                                 </Link>
                             </div>
                         ))
+
                         :
+
                         <div style={{ textAlign: "center", fontSize: "24px", color: "#FF6060", margin: "auto" }}>
                             <p>Le chargement des données a échoué... 😕 </p>
                             <p>Veuillez recharger cette page plus tard.</p>

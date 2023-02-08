@@ -13,7 +13,7 @@ function App() {
         <div className="body">
             <Router>
                 <Header />
-                <Routes fallback={<Page404 />}>
+                <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/logements/:id" element={<Logement />}></Route>
                     <Route path="/about" element={<About />}></Route>

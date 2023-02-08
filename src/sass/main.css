@@ -578,6 +578,7 @@ li {
   .cntnr-name-img .img {
     width: 32px;
     height: 32px;
+    margin-left: 10px;
   }
 }
 .logo {
@@ -773,7 +774,7 @@ footer {
     color: white;
   }
 }
-.header-cntnr {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -850,14 +851,6 @@ footer {
     text-decoration: underline;
   }
 }
-.gallery {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  width: 100px;
-  height: 100px;
-}
-
 .cntnr-title-location-tags-host-ratings {
   display: flex;
   flex-wrap: nowrap;

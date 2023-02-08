@@ -46,7 +46,6 @@ function Logement() {
                 <div className="cntnr-title-location-tags-host-ratings">
                     <div className="cntr-title-location-tags">
                         <Title
-                            className="title"
                             title={logement.title}
                             location={logement.location}
                         />
@@ -58,11 +57,9 @@ function Logement() {
                     </div>
                     <div className="cntnr-host-ratings">
                         <Host
-                            className="host"
                             host={logement.host}
                         />
                         <Ratings
-                            className="ratings"
                             rating={logement.rating}
                         />
                     </div>

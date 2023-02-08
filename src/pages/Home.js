@@ -8,7 +8,7 @@ const home = () => (
         <Banner imageUrl={bannerImage}
             title="Chez vous, partout et ailleurs"
         />
-        <Gallery className="gallery" />
+        <Gallery />
     </>
 );
 
